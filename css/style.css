@@ -250,6 +250,90 @@ body {
 .mobile__menu {
   display: none;
 }
+h3 {
+  text-align: center;
+  font-family: 'Airfool', sans-serif;
+  line-height: 100%;
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+}
+.priority {
+  background: #865dc8;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.priority__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  position: relative;
+  z-index: 10;
+}
+.priority__item {
+  color: #fff;
+}
+.priority__item img {
+  display: block;
+  max-height: 180px;
+  margin: 0px auto;
+}
+.priority__item h4 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  line-height: 150%;
+  font-size: 1.5em;
+  text-align: center;
+}
+.priority__item p {
+  text-align: center;
+  font-size: 1em;
+}
+.priority .circle1 {
+  height: 100px;
+  width: 100px;
+  background: #865dc8;
+  top: 20%;
+  left: 80%;
+  animation: wave 2s linear infinite;
+}
+.priority .circle2 {
+  height: 80px;
+  width: 80px;
+  background: #ef7584;
+  bottom: 25%;
+  left: 35%;
+}
+.priority .circle3 {
+  height: 50px;
+  width: 50px;
+  background: #faba69;
+  bottom: 5%;
+  left: 56%;
+  animation: wave 2s linear infinite;
+}
+.priority .circle4 {
+  height: 120px;
+  width: 120px;
+  background: #a4e24c;
+  bottom: 15%;
+  left: 7%;
+  animation: wave 3s linear infinite;
+}
+.priority .circle5 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border: 5px dotted #a4e24c;
+  top: 13%;
+  left: 30%;
+  animation: circle 15s linear infinite;
+}
 @media (max-width: 500px) {
   .container {
     max-width: none;
@@ -290,88 +374,6 @@ body {
     transform: translateX(20%);
     position: relative;
     z-index: 3;
-  }
-  .mobile__menu {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #3667e6;
-    z-index: 10;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: 0.5s;
-  }
-  .mobile__menu ul {
-    text-align: center;
-    margin-top: 30%;
-  }
-  .mobile__menu ul li a {
-    font-size: 1.5em;
-    margin: 10px 0px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    line-height: 150%;
-  }
-  .mobile__menu button.close {
-    height: 50px;
-    width: 50px;
-    background: url(../img/icons/close.svg) no-repeat center;
-    background-size: cover;
-    border: none;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  .mobile__menu .circle1 {
-    height: 100px;
-    width: 100px;
-    background: #865dc8;
-    top: 40%;
-    left: 5%;
-    animation: wave 2s linear infinite;
-    pointer-events: none;
-  }
-  .mobile__menu .circle2 {
-    height: 80px;
-    width: 80px;
-    background: #ef7584;
-    bottom: 25%;
-    left: 25%;
-    pointer-events: none;
-  }
-  .mobile__menu .circle3 {
-    height: 50px;
-    width: 50px;
-    background: #faba69;
-    bottom: 5%;
-    left: 7%;
-    animation: wave 2s linear infinite;
-    pointer-events: none;
-  }
-  .mobile__menu .circle4 {
-    height: 120px;
-    width: 120px;
-    background: #a4e24c;
-    bottom: 20%;
-    left: 57%;
-    animation: wave 3s linear infinite;
-    pointer-events: none;
-  }
-  .mobile__menu .circle5 {
-    height: 120px;
-    width: 120px;
-    background: transparent;
-    border: 5px dotted #a4e24c;
-    top: -1%;
-    left: -5%;
-    animation: circle 15s linear infinite;
-    pointer-events: none;
   }
   .figure {
     height: 800px;
@@ -448,5 +450,142 @@ body {
     left: -60px;
     top: -30px;
     transform: translateY(0);
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  .priority__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .priority__item img {
+    max-height: 100px;
+  }
+  .priority__item h4 {
+    font-size: 1em;
+  }
+  .priority__item p {
+    font-size: 0.875em;
+  }
+  .priority .circle1 {
+    height: 100px;
+    width: 100px;
+    background: #865dc8;
+    top: 60%;
+    left: 80%;
+    animation: wave 2s linear infinite;
+  }
+  .priority .circle2 {
+    height: 80px;
+    width: 80px;
+    background: #ef7584;
+    bottom: 60%;
+    left: 35%;
+  }
+  .priority .circle3 {
+    height: 50px;
+    width: 50px;
+    background: #faba69;
+    bottom: 5%;
+    left: 56%;
+    animation: wave 2s linear infinite;
+  }
+  .priority .circle4 {
+    height: 120px;
+    width: 120px;
+    background: #a4e24c;
+    bottom: 15%;
+    left: 7%;
+    animation: wave 3s linear infinite;
+  }
+  .priority .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: 7%;
+    left: 10%;
+    animation: circle 15s linear infinite;
+  }
+  .mobile__menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3667e6;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  .mobile__menu ul {
+    text-align: center;
+    margin-top: 30%;
+  }
+  .mobile__menu ul li a {
+    font-size: 1.5em;
+    margin: 10px 0px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    line-height: 150%;
+  }
+  .mobile__menu button.close {
+    height: 50px;
+    width: 50px;
+    background: url(../img/icons/close.svg) no-repeat center;
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .mobile__menu .circle1 {
+    height: 100px;
+    width: 100px;
+    background: #865dc8;
+    top: 40%;
+    left: 5%;
+    animation: wave 2s linear infinite;
+    pointer-events: none;
+  }
+  .mobile__menu .circle2 {
+    height: 80px;
+    width: 80px;
+    background: #ef7584;
+    bottom: 25%;
+    left: 25%;
+    pointer-events: none;
+  }
+  .mobile__menu .circle3 {
+    height: 50px;
+    width: 50px;
+    background: #faba69;
+    bottom: 5%;
+    left: 7%;
+    animation: wave 2s linear infinite;
+    pointer-events: none;
+  }
+  .mobile__menu .circle4 {
+    height: 120px;
+    width: 120px;
+    background: #a4e24c;
+    bottom: 20%;
+    left: 57%;
+    animation: wave 3s linear infinite;
+    pointer-events: none;
+  }
+  .mobile__menu .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: -1%;
+    left: -5%;
+    animation: circle 15s linear infinite;
+    pointer-events: none;
   }
 }

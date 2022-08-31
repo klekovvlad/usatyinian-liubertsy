@@ -259,6 +259,88 @@ body {
 .mobile__menu {
     display: none;
 }
+h3 {
+    text-align: center;
+    .headers();
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+.priority {
+    background: @purple;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 30px;
+        position: relative;
+        z-index: 10;
+    }
+    &__item {
+        color: #fff;
+        img {
+            display: block;
+            max-height: 180px;
+            margin: 0px auto;
+        }
+        h4 {
+            .bold();
+            font-size: 1.5em;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+    .circle1 {
+        height: 100px;
+        width: 100px;
+        background: @purple;
+        top: 20%;
+        left: 80%;
+        animation: wave 2s linear infinite;
+    }
+    .circle2 {
+        height: 80px;
+        width: 80px;
+        background: @pink;
+        bottom: 25%;
+        left: 35%;
+    }
+    .circle3 {
+        height: 50px;
+        width: 50px;
+        background: @yellow;
+        bottom: 5%;
+        left: 56%;
+        animation: wave 2s linear infinite;
+    }
+    .circle4 {
+        height: 120px;
+        width: 120px;
+        background: #a4e24c;
+        bottom: 15%;
+        left: 7%;
+        animation: wave 3s linear infinite;
+    }
+    .circle5 {
+        height: 120px;
+        width: 120px;
+        background: transparent;
+        border: 5px dotted #a4e24c;
+        top: 13%;
+        left: 30%;
+        animation: circle 15s linear infinite;
+    }
+}
 
 @media (max-width: 500px) {
     .container {
@@ -272,16 +354,16 @@ body {
             align-items: start;
         }
         &__text {
-            margin-top: 35%;
+            margin-top: 30%;
             h1 {      
-                font-size: 2em;
+                font-size: 1.7em;
                 span.name {
                     font-size: 1.8em;
                 }
             }
             h2 {
                 .bold();
-                font-size: 1.5em;
+                font-size: 1.125em;
                 color: #fff;
             }
             button.main-btn {
@@ -300,89 +382,6 @@ body {
                 position: relative;
                 z-index: 3;
             }
-        }
-    }
-    .mobile__menu {
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: @blue;
-        z-index: 10;
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: 0.5s;
-        ul {
-            text-align: center;
-            margin-top: 30%;
-            li {
-                a {
-                    font-size: 1.5em;
-                    margin: 10px 0px;
-                    display: block;
-                    text-decoration: none;
-                    color: #fff;
-                    .sbold();
-                }
-            }
-        }
-        button.close {
-            height: 50px;
-            width: 50px;
-            background: url(../img/icons/close.svg) no-repeat center;
-            background-size: cover;
-            border: none;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        .circle1 {
-            height: 100px;
-            width: 100px;
-            background: @purple;
-            top: 40%;
-            left: 5%;
-            animation: wave 2s linear infinite;
-            pointer-events: none;
-        }
-        .circle2 {
-            height: 80px;
-            width: 80px;
-            background: @pink;
-            bottom: 25%;
-            left: 25%;
-            pointer-events: none;
-        }
-        .circle3 {
-            height: 50px;
-            width: 50px;
-            background: @yellow;
-            bottom: 5%;
-            left: 7%;
-            animation: wave 2s linear infinite;
-            pointer-events: none;
-        }
-        .circle4 {
-            height: 120px;
-            width: 120px;
-            background: #a4e24c;
-            bottom: 50%;
-            left: 57%;
-            animation: wave 3s linear infinite;
-            pointer-events: none;
-        }
-        .circle5 {
-            height: 120px;
-            width: 120px;
-            background: transparent;
-            border: 5px dotted #a4e24c;
-            top: -1%;
-            left: -5%;
-            animation: circle 15s linear infinite;
-            pointer-events: none;
         }
     }
     .figure {
@@ -459,6 +458,149 @@ body {
                 top: -30px;
                 transform: translateY(0);
             }
+        }
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    .priority {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            img {
+                max-height: 100px;
+            }
+            h4 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 0.875em;
+            }
+        }
+        .circle1 {
+            height: 100px;
+            width: 100px;
+            background: @purple;
+            top: 60%;
+            left: 80%;
+            animation: wave 2s linear infinite;
+        }
+        .circle2 {
+            height: 80px;
+            width: 80px;
+            background: @pink;
+            bottom: 60%;
+            left: 35%;
+        }
+        .circle3 {
+            height: 50px;
+            width: 50px;
+            background: @yellow;
+            bottom: 5%;
+            left: 56%;
+            animation: wave 2s linear infinite;
+        }
+        .circle4 {
+            height: 120px;
+            width: 120px;
+            background: #a4e24c;
+            bottom: 15%;
+            left: 7%;
+            animation: wave 3s linear infinite;
+        }
+        .circle5 {
+            height: 120px;
+            width: 120px;
+            background: transparent;
+            border: 5px dotted #a4e24c;
+            top: 7%;
+            left: 10%;
+            animation: circle 15s linear infinite;
+        }
+    }
+
+    .mobile__menu {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: @blue;
+        z-index: 100;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        ul {
+            text-align: center;
+            margin-top: 30%;
+            li {
+                a {
+                    font-size: 1.5em;
+                    margin: 10px 0px;
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    .sbold();
+                }
+            }
+        }
+        button.close {
+            height: 50px;
+            width: 50px;
+            background: url(../img/icons/close.svg) no-repeat center;
+            background-size: cover;
+            border: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .circle1 {
+            height: 100px;
+            width: 100px;
+            background: @purple;
+            top: 40%;
+            left: 5%;
+            animation: wave 2s linear infinite;
+            pointer-events: none;
+        }
+        .circle2 {
+            height: 80px;
+            width: 80px;
+            background: @pink;
+            bottom: 25%;
+            left: 25%;
+            pointer-events: none;
+        }
+        .circle3 {
+            height: 50px;
+            width: 50px;
+            background: @yellow;
+            bottom: 5%;
+            left: 7%;
+            animation: wave 2s linear infinite;
+            pointer-events: none;
+        }
+        .circle4 {
+            height: 120px;
+            width: 120px;
+            background: #a4e24c;
+            bottom: 20%;
+            left: 57%;
+            animation: wave 3s linear infinite;
+            pointer-events: none;
+        }
+        .circle5 {
+            height: 120px;
+            width: 120px;
+            background: transparent;
+            border: 5px dotted #a4e24c;
+            top: -1%;
+            left: -5%;
+            animation: circle 15s linear infinite;
+            pointer-events: none;
         }
     }
 }
