@@ -24,6 +24,40 @@ body {
   padding: 0px 10px;
   margin: 0px auto;
 }
+button.main-btn {
+  margin-top: 30px;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141212;
+  background: #ffd200;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.125em;
+  cursor: pointer;
+  font-family: 'Montserrat-Bold', sans-serif;
+  line-height: 150%;
+  position: relative;
+}
+button.main-btn:before {
+  content: '';
+  width: 350px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ffd200;
+  border-radius: 30px;
+  right: -15px;
+  bottom: -10px;
+  position: absolute;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+button.main-btn:hover:before {
+  right: 0;
+  bottom: 0;
+}
 .main {
   height: 100vh;
   overflow: hidden;
@@ -58,40 +92,6 @@ body {
   line-height: 150%;
   font-size: 1.5em;
   color: #fff;
-}
-.main__text button.main-btn {
-  margin-top: 30px;
-  width: 350px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #141212;
-  background: #ffd200;
-  border-radius: 30px;
-  border: none;
-  font-size: 1.125em;
-  cursor: pointer;
-  font-family: 'Montserrat-Bold', sans-serif;
-  line-height: 150%;
-  position: relative;
-}
-.main__text button.main-btn:before {
-  content: '';
-  width: 350px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #ffd200;
-  border-radius: 30px;
-  right: -15px;
-  bottom: -10px;
-  position: absolute;
-  transition: 0.5s;
-  box-sizing: border-box;
-}
-.main__text button.main-btn:hover:before {
-  right: 0;
-  bottom: 0;
 }
 .main__image {
   position: absolute;
@@ -332,6 +332,163 @@ h3 {
   border: 5px dotted #a4e24c;
   top: 13%;
   left: 30%;
+  animation: circle 15s linear infinite;
+}
+.services {
+  background: #ef7584;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.services button.main-btn,
+.services button.main-btn:before {
+  width: 200px;
+  margin: 0px auto;
+}
+.services__wrapper {
+  position: relative;
+  z-index: 10;
+}
+.services .slick-slide {
+  margin: 0px 25px;
+}
+.services .slick-track {
+  position: relative;
+}
+.services .slick-arrow {
+  font-size: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 4px solid #ef7584;
+  background: #fff url(../img/icons/arrow.svg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.services .slick-prev {
+  left: -5px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.services .slick-next {
+  right: -5px;
+}
+.services__item {
+  padding: 50px;
+  border-radius: 50px;
+  background: #fff;
+}
+.services__item h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Bold', sans-serif;
+  line-height: 150%;
+  color: #ef7584;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services__item p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.services__item span.price {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.63em;
+  font-family: 'Montserrat-Bold', sans-serif;
+  line-height: 150%;
+  text-align: center;
+}
+.services__item b {
+  font-size: 18px;
+}
+.services__item ul {
+  margin: 20px 0px;
+}
+.services__item ul li {
+  font-size: 14px;
+  position: relative;
+  left: 30px;
+  margin-right: 30px;
+}
+.services__item ul li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/ok.svg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.services__info {
+  text-align: center;
+  padding: 50px 0px;
+  max-width: 50%;
+  margin: 0px auto;
+  position: relative;
+  z-index: 10;
+}
+.services__info h4 {
+  font-size: 2em;
+  font-family: 'Montserrat-Bold', sans-serif;
+  line-height: 150%;
+  color: #fff;
+}
+.services__row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 50px;
+}
+.services__row span {
+  display: block;
+  text-align: center;
+}
+.services__row span.time {
+  font-size: 1.8em;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  line-height: 150%;
+  color: #ef7584;
+}
+.services__row span.text {
+  text-align: left;
+}
+.services .figure {
+  background: #865dc8;
+}
+.services .circle1 {
+  height: 100px;
+  width: 100px;
+  background: #865dc8;
+  top: 10%;
+  left: 10%;
+  animation: wave 2s linear infinite;
+}
+.services .circle2 {
+  height: 80px;
+  width: 80px;
+  background: #ef7584;
+  bottom: 25%;
+  left: 80%;
+}
+.services .circle5 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border: 5px dotted #a4e24c;
+  top: 5%;
+  left: 40%;
   animation: circle 15s linear infinite;
 }
 @media (max-width: 500px) {
@@ -587,5 +744,71 @@ h3 {
     left: -5%;
     animation: circle 15s linear infinite;
     pointer-events: none;
+  }
+  .services button.main-btn,
+  .services button.main-btn:before {
+    width: 180px;
+    font-size: 1em;
+  }
+  .services .slick-slide {
+    margin: 0px;
+  }
+  .services .slick-arrow {
+    height: 50px;
+    width: 50px;
+  }
+  .services .slick-prev {
+    left: -20px;
+  }
+  .services .slick-next {
+    right: -20px;
+  }
+  .services__item {
+    padding: 40px;
+  }
+  .services__info {
+    max-width: 100%;
+  }
+  .services__info h4 {
+    font-size: 1.5em;
+    font-family: 'Montserrat-Bold', sans-serif;
+    line-height: 150%;
+    color: #fff;
+  }
+  .services__row {
+    padding: 5px;
+  }
+  .services__row span.time {
+    font-size: 1.25em;
+  }
+  .services__row span.text {
+    font-size: 0.875em;
+  }
+  .services .figure {
+    background: #865dc8;
+  }
+  .services .circle1 {
+    height: 100px;
+    width: 100px;
+    background: #865dc8;
+    top: 10%;
+    left: 10%;
+    animation: wave 2s linear infinite;
+  }
+  .services .circle2 {
+    height: 80px;
+    width: 80px;
+    background: #ef7584;
+    bottom: 25%;
+    left: 80%;
+  }
+  .services .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: 5%;
+    left: 40%;
+    animation: circle 15s linear infinite;
   }
 }
