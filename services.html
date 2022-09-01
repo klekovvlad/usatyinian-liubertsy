@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,7 +53,7 @@
                             <li>развивающие занятия по возрасту</li>
                             <li>английский язык с 3-х лет (2 раза в неделю)</li>
                         </ul>
-                        <button class="main-btn">Записаться</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
 
                     <div class="services__item">
@@ -66,7 +67,7 @@
                             <li>развивающие занятия по возрасту</li>
                             <li>английский язык с 3-х лет (2 раза в неделю)</li>
                         </ul>
-                        <button class="main-btn">Записаться</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
 
                     <div class="services__item">
@@ -80,7 +81,7 @@
                             <li>развивающие занятия по возрасту</li>
                             <li>английский язык с 3-х лет (2 раза в неделю)</li>
                         </ul>
-                        <button class="main-btn">Записаться</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
 
                     <div class="services__item">
@@ -94,7 +95,7 @@
                             <li>развивающие занятия по возрасту</li>
                             <li>английский язык с 3-х лет (2 раза в неделю)</li>
                         </ul>
-                        <button class="main-btn">Записаться</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
 
                     <div class="services__item">
@@ -108,7 +109,7 @@
                             <li>развивающие занятия по возрасту</li>
                             <li>английский язык с 3-х лет (2 раза в неделю)</li>
                         </ul>
-                        <button class="main-btn">Записаться</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
 
                 </div>
@@ -158,11 +159,28 @@
         <div class="circle3"></div>
         <div class="circle4"></div>
         <div class="circle5"></div>
+
+        <div class="popup" id="popup">
+            <h4>Оставьте ваши контактные данные</h4>
+            <form action="">
+                <span>Ваше имя</span>
+                <input name="name" type="text" placeholder="Имя">
+                <span>Телефон</span>
+                <input id="phone" name="phone" type="phone" placeholder="+7 (999) 999-99-99" required>
+                <span>Возраст ребенка</span>
+                <input name="old" type="number">
+                <button class="main-btn" type="submit">Отправить</button>
+            </form>
+        </div>
+
     </section>
+
+    
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

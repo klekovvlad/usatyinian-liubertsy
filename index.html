@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <div class="main__text">
                         <h1>Частный детский сад <span class="name">Усатый нянь</span></h1>
                         <h2>Развивающая и здоровая среда для Ваших детей</h2>
-                        <button class="main-btn">Записаться на экскурсию</button>
+                        <a data-fancybox href="#popup"><button class="main-btn">Записаться</button></a>
                     </div>
                     <div class="main__image">
                         <img src="img/baby.png" alt="Ребенок">
@@ -61,9 +62,23 @@
         <div class="circle5"></div>
     </section>
 
+    <div class="popup" id="popup">
+        <h4>Оставьте ваши контактные данные</h4>
+        <form action="">
+            <span>Ваше имя</span>
+            <input name="name" type="text" placeholder="Имя">
+            <span>Телефон</span>
+            <input id="phone" name="phone" type="phone" placeholder="+7 (999) 999-99-99" required>
+            <span>Возраст ребенка</span>
+            <input name="old" type="number">
+            <button class="main-btn" type="submit">Отправить</button>
+        </form>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

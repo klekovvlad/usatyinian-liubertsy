@@ -61,7 +61,7 @@ $('.services__wrapper').slick({
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
@@ -75,5 +75,9 @@ $('.services__wrapper').slick({
         }
       }
     ]
+  });
+
+  jQuery(function($){
+    $("#phone").mask("+7 (999) 999-99-99");
   });
 

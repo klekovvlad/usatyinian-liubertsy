@@ -69,6 +69,10 @@ button.main-btn:hover:before {
     right: 0;
     bottom: 0;
 }
+a {
+    text-decoration: none;
+    color: @text;
+}
 
 .main {
     height: 100vh;
@@ -105,12 +109,10 @@ button.main-btn:hover:before {
         }
     }
     &__image {
-        position: absolute;
-        right: -22%;
-        top: -20%;
+        position: relative;
         pointer-events: none;
         img {
-            max-width: 80%;
+            max-width: 100%;
             pointer-events: none;
         }
     }
@@ -194,7 +196,7 @@ button.main-btn:hover:before {
     }
 }
 .header {
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
@@ -585,7 +587,109 @@ h3 {
     }
 }
 
-@media (max-width: 500px) {
+.popup {
+    display: none;
+    max-width: 500px;
+    text-align: center;
+    h4 {
+        text-align: center;
+        font-size: 1.5em;
+        .bold();
+        margin-bottom: 10px;
+    }
+    span {
+        display: inline-block;
+        margin: 0px auto;
+        padding: 0px 10px;
+        background: #fff;
+        position: relative;
+        font-size: 18px;
+        top: 10px;
+    }
+    input {
+        display: block;
+        margin: 0px auto;
+        height: 50px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        border-radius: 30px;
+        border: 1px solid @text;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    button.main-btn {
+        width: 300px;
+        margin: 20px auto;
+    }
+    button.main-btn:before {
+        width: 300px; 
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        max-width: none;
+        padding: 0px 30px;
+    }
+    .main {
+        &__text {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+        }
+        &__image {
+            position: relative;
+            right: 0%;
+            top: 0%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .header {
+        padding: 30px 0px;
+        grid-template-columns: 20% 50% 30%;
+        &__link {
+            ul {
+                li {
+                    a {
+                        font-size: 0.875em;
+                    }
+                }
+            }
+        }
+        &__phone {
+            a.phone {
+                font-size: 1em;
+            }
+        }
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    .priority {
+        &__item {
+            h4 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 0.875em;
+            }
+        }
+    }
+    .services {
+        &__info {
+            max-width: 70%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
     .container {
         max-width: none;
         padding: 0px 20px;
@@ -617,10 +721,7 @@ h3 {
             }
         }
         &__image {
-            right: 0%;
-            top: 70%;
             img {
-                max-width: 100%;
                 transform: translateX(20%);
                 position: relative;
                 z-index: 3;
@@ -1039,6 +1140,18 @@ h3 {
             top: 5%;
             left: 40%;
             animation: circle 15s linear infinite;
+        }
+    }
+    .popup {
+        max-width: 95%;
+        input {
+            width: 250px;
+        }
+        button.main-btn {
+            width: 250px;
+        }
+        button.main-btn:before {
+            width: 250px; 
         }
     }
 }
