@@ -522,6 +522,63 @@ h3 {
 .contacts__info p {
   color: #fff;
 }
+.about {
+  background: #865dc8;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.about__content {
+  position: relative;
+  z-index: 10;
+}
+.about__content p {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 0px;
+  text-align: justify;
+}
+.about .circle1 {
+  height: 100px;
+  width: 100px;
+  background: #865dc8;
+  top: 60%;
+  left: 80%;
+  animation: wave 2s linear infinite;
+}
+.about .circle2 {
+  height: 80px;
+  width: 80px;
+  background: #ef7584;
+  bottom: 25%;
+  left: 35%;
+}
+.about .circle3 {
+  height: 50px;
+  width: 50px;
+  background: #faba69;
+  bottom: 5%;
+  left: 56%;
+  animation: wave 2s linear infinite;
+}
+.about .circle4 {
+  height: 120px;
+  width: 120px;
+  background: #a4e24c;
+  bottom: -2%;
+  left: -3%;
+  animation: wave 3s linear infinite;
+}
+.about .circle5 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border: 5px dotted #a4e24c;
+  top: 13%;
+  left: 40%;
+  animation: circle 15s linear infinite;
+}
 @media (max-width: 500px) {
   .container {
     max-width: none;
@@ -639,161 +696,6 @@ h3 {
     top: -30px;
     transform: translateY(0);
   }
-  h3 {
-    font-size: 2.5em;
-  }
-  .priority__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .priority__item img {
-    max-height: 100px;
-  }
-  .priority__item h4 {
-    font-size: 1em;
-  }
-  .priority__item p {
-    font-size: 0.875em;
-  }
-  .priority .circle1 {
-    height: 100px;
-    width: 100px;
-    background: #865dc8;
-    top: 60%;
-    left: 80%;
-    animation: wave 2s linear infinite;
-  }
-  .priority .circle2 {
-    height: 80px;
-    width: 80px;
-    background: #ef7584;
-    bottom: 60%;
-    left: 35%;
-  }
-  .priority .circle3 {
-    height: 50px;
-    width: 50px;
-    background: #faba69;
-    bottom: 5%;
-    left: 56%;
-    animation: wave 2s linear infinite;
-  }
-  .priority .circle4 {
-    height: 120px;
-    width: 120px;
-    background: #a4e24c;
-    bottom: 15%;
-    left: 7%;
-    animation: wave 3s linear infinite;
-  }
-  .priority .circle5 {
-    height: 120px;
-    width: 120px;
-    background: transparent;
-    border: 5px dotted #a4e24c;
-    top: 7%;
-    left: 10%;
-    animation: circle 15s linear infinite;
-  }
-  .contacts {
-    background: #a4e24c;
-    min-height: 100vh;
-    padding-bottom: 50px;
-    position: relative;
-    overflow: hidden;
-  }
-  .contacts__wrapper {
-    position: relative;
-    z-index: 10;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-column-gap: 50px;
-    align-items: center;
-  }
-  .contacts__info h4 {
-    font-size: 1.5em;
-    font-family: 'Montserrat-Bold', sans-serif;
-    line-height: 150%;
-    margin-bottom: 20px;
-    color: #865dc8;
-  }
-  .contacts__info h5 {
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    line-height: 150%;
-    color: #fff;
-    margin: 5px 0px;
-  }
-  .contacts__info p {
-    color: #fff;
-  }
-  .contacts {
-    background: #ef7584;
-  }
-  .contacts__wrapper {
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px;
-  }
-  .contacts__info {
-    grid-row-start: 1;
-  }
-  .contacts__info h4 {
-    font-size: 1.5em;
-    font-family: 'Montserrat-Bold', sans-serif;
-    line-height: 150%;
-    margin-bottom: 20px;
-    color: #865dc8;
-  }
-  .contacts__info h5 {
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    line-height: 150%;
-    color: #fff;
-    margin: 5px 0px;
-  }
-  .contacts__info p {
-    color: #fff;
-  }
-  .contacts .figure {
-    background: #a4e24c;
-  }
-  .contacts .circle1 {
-    height: 100px;
-    width: 100px;
-    background: #865dc8;
-    top: 60%;
-    left: 80%;
-    animation: wave 2s linear infinite;
-  }
-  .contacts .circle2 {
-    height: 80px;
-    width: 80px;
-    background: #ef7584;
-    bottom: 0%;
-    left: 5%;
-  }
-  .contacts .circle3 {
-    height: 50px;
-    width: 50px;
-    background: #faba69;
-    bottom: 60%;
-    left: 56%;
-    animation: wave 2s linear infinite;
-  }
-  .contacts .circle4 {
-    height: 120px;
-    width: 120px;
-    background: #a4e24c;
-    bottom: 80%;
-    left: 90%;
-    animation: wave 3s linear infinite;
-  }
-  .contacts .circle5 {
-    height: 120px;
-    width: 120px;
-    background: transparent;
-    border: 5px dotted #a4e24c;
-    top: 7%;
-    left: 10%;
-    animation: circle 15s linear infinite;
-  }
   .mobile__menu {
     display: flex;
     justify-content: center;
@@ -875,6 +777,188 @@ h3 {
     left: -5%;
     animation: circle 15s linear infinite;
     pointer-events: none;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  .priority .mobile__menu {
+    background: #865dc8;
+  }
+  .priority__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .priority__item img {
+    max-height: 100px;
+  }
+  .priority__item h4 {
+    font-size: 1em;
+  }
+  .priority__item p {
+    font-size: 0.875em;
+  }
+  .priority .circle1 {
+    height: 100px;
+    width: 100px;
+    background: #865dc8;
+    top: 60%;
+    left: 80%;
+    animation: wave 2s linear infinite;
+  }
+  .priority .circle2 {
+    height: 80px;
+    width: 80px;
+    background: #ef7584;
+    bottom: 60%;
+    left: 35%;
+  }
+  .priority .circle3 {
+    height: 50px;
+    width: 50px;
+    background: #faba69;
+    bottom: 5%;
+    left: 56%;
+    animation: wave 2s linear infinite;
+  }
+  .priority .circle4 {
+    height: 120px;
+    width: 120px;
+    background: #a4e24c;
+    bottom: 15%;
+    left: 7%;
+    animation: wave 3s linear infinite;
+  }
+  .priority .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: 7%;
+    left: 10%;
+    animation: circle 15s linear infinite;
+  }
+  .contacts {
+    background: #a4e24c;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contacts .mobile__menu {
+    background: #a4e24c;
+  }
+  .contacts__wrapper {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+  }
+  .contacts__info h4 {
+    font-size: 1.5em;
+    font-family: 'Montserrat-Bold', sans-serif;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: #865dc8;
+  }
+  .contacts__info h5 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    line-height: 150%;
+    color: #fff;
+    margin: 5px 0px;
+  }
+  .contacts__info p {
+    color: #fff;
+  }
+  .contacts {
+    background: #ef7584;
+  }
+  .contacts .mobile__menu {
+    background: #ef7584;
+  }
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+  .contacts__info {
+    grid-row-start: 1;
+  }
+  .contacts__info h4 {
+    font-size: 1.5em;
+    font-family: 'Montserrat-Bold', sans-serif;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: #865dc8;
+  }
+  .contacts__info h5 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    line-height: 150%;
+    color: #fff;
+    margin: 5px 0px;
+  }
+  .contacts__info p {
+    color: #fff;
+  }
+  .contacts .figure {
+    background: #a4e24c;
+  }
+  .contacts .circle1 {
+    height: 100px;
+    width: 100px;
+    background: #865dc8;
+    top: 60%;
+    left: 80%;
+    animation: wave 2s linear infinite;
+  }
+  .contacts .circle2 {
+    height: 80px;
+    width: 80px;
+    background: #ef7584;
+    bottom: 0%;
+    left: 5%;
+  }
+  .contacts .circle3 {
+    height: 50px;
+    width: 50px;
+    background: #faba69;
+    bottom: 60%;
+    left: 56%;
+    animation: wave 2s linear infinite;
+  }
+  .contacts .circle4 {
+    height: 120px;
+    width: 120px;
+    background: #a4e24c;
+    bottom: 80%;
+    left: 90%;
+    animation: wave 3s linear infinite;
+  }
+  .contacts .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: 7%;
+    left: 10%;
+    animation: circle 15s linear infinite;
+  }
+  .about .mobile__menu {
+    background: #865dc8;
+  }
+  .about__content p {
+    font-size: 1em;
+  }
+  .about .circle5 {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 5px dotted #a4e24c;
+    top: 5%;
+    left: 40%;
+    animation: circle 15s linear infinite;
+  }
+  .services .mobile__menu {
+    background: #ef7584;
   }
   .services button.main-btn,
   .services button.main-btn:before {
